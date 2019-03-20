@@ -4,7 +4,7 @@ FROM nvidia/cuda:9.2-cudnn7-devel
 RUN apt-get update \
         && apt-get --yes install \
                 munge libmunge-dev libmysqld-dev libpam0g-dev \
-                curl wget tmux htop vim gcc make git lsof \
+                curl wget tmux htop vim gcc make git lsof unzip \
                 openjdk-8-jdk \
         && rm -rf /var/lib/apt/lists/*
 
